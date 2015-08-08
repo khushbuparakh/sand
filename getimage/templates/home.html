@@ -1,0 +1,11 @@
+<!DOCTYPE HTML><html><body>
+<form action="." method="post">{% csrf_token %}
+    <label for="url">Enter URL: </label>
+    <input id="url" type="text" name="url">
+    <input type="submit" value="GO">
+</form>
+{% for o in z %}
+<img src='{{o}}'>
+{% endfor %}
+<br> links within this url : {{h|length}}
+</body></html>
